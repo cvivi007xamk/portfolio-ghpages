@@ -2,7 +2,7 @@
 	"name": "homepage",
 	"version": "0.1.0",
 	"private": true,
-	"homepage": "https://cvivi007xamk.github.io/portfolio-ghpages",
+	"homepage": "https://virtanen.dev",
 	"dependencies": {
 		"@babel/core": "^7.16.0",
 		"@date-io/date-fns": "^2.11.0",
