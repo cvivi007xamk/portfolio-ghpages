@@ -26,8 +26,6 @@ import ContactMailIcon from "@mui/icons-material/ContactMail";
 import WorkIcon from "@mui/icons-material/Work";
 import SchoolIcon from "@mui/icons-material/School";
 
-const drawerWidth = 240;
-
 const Navigationbar = (props) => {
 	const handleChange = (event, newValue) => {
 		props.setTabValue(newValue);
