@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/static/js/main.8f0a9841.chunk.js",
-    "main.js.map": "/static/js/main.8f0a9841.chunk.js.map",
+    "main.js": "/static/js/main.26329b4a.chunk.js",
+    "main.js.map": "/static/js/main.26329b4a.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.110dac8d.js",
     "runtime-main.js.map": "/static/js/runtime-main.110dac8d.js.map",
-    "static/js/2.08cf01d3.chunk.js": "/static/js/2.08cf01d3.chunk.js",
-    "static/js/2.08cf01d3.chunk.js.map": "/static/js/2.08cf01d3.chunk.js.map",
+    "static/js/2.60195bd9.chunk.js": "/static/js/2.60195bd9.chunk.js",
+    "static/js/2.60195bd9.chunk.js.map": "/static/js/2.60195bd9.chunk.js.map",
     "index.html": "/index.html",
-    "static/js/2.08cf01d3.chunk.js.LICENSE.txt": "/static/js/2.08cf01d3.chunk.js.LICENSE.txt",
+    "static/js/2.60195bd9.chunk.js.LICENSE.txt": "/static/js/2.60195bd9.chunk.js.LICENSE.txt",
     "static/media/bitcoin.229e5f10.svg": "/static/media/bitcoin.229e5f10.svg",
     "static/media/career.44966409.jpeg": "/static/media/career.44966409.jpeg",
     "static/media/education.0cbf0006.jpg": "/static/media/education.0cbf0006.jpg",
@@ -25,7 +25,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.110dac8d.js",
-    "static/js/2.08cf01d3.chunk.js",
-    "static/js/main.8f0a9841.chunk.js"
+    "static/js/2.60195bd9.chunk.js",
+    "static/js/main.26329b4a.chunk.js"
   ]
 }
