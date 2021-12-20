@@ -20,7 +20,7 @@ const AboutMe = React.forwardRef((props, ref) => {
 		<>
 			<Box
 				sx={{
-					marginTop: "400px",
+					marginTop: "30vh",
 				}}
 			>
 				<Zoom in={checked1}>

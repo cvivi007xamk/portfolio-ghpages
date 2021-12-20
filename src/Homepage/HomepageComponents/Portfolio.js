@@ -51,8 +51,7 @@ const Portfolio = React.forwardRef((props, ref) => {
 							Bitcoin Timemachine
 						</Typography>
 						<Typography variant="body2" color="text.secondary">
-							Check best days to buy and sell on a given date
-							range.
+							Check best days to buy and sell on a date range.
 						</Typography>
 					</CardContent>
 					<CardActions>

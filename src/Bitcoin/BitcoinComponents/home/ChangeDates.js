@@ -40,18 +40,10 @@ const ChangeDates = (props) => {
 	const [startValue, setStartValue] = React.useState(yesterday);
 	const [endValue, setEndValue] = React.useState(today);
 
-	//Make sure the enddate is after startdate. Use these as min/max values in th einput fields.
-	let startDateString = new Date(props.startDate * 1000)
-		.toISOString()
-		.substr(0, 10);
-	let endDateString = new Date(props.endDate * 1000)
-		.toISOString()
-		.substr(0, 10);
-
-	console.log("startValue", startValue);
-	console.log("endValue", endValue);
-	console.log("startDateString", startDateString);
-	console.log("endDateString", endDateString);
+	// console.log("startValue", startValue);
+	// console.log("endValue", endValue);
+	// console.log("startDateString", startDateString);
+	// console.log("endDateString", endDateString);
 
 	return (
 		<Box>

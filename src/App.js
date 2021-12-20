@@ -15,11 +15,15 @@ import Navigationbar from "./Navigationbar";
 
 import { Route, Routes } from "react-router-dom";
 import CssBaseline from "@mui/material/CssBaseline";
-import Box from "@mui/material/Box";
-import { ThemeProvider, createTheme } from "@mui/material/styles";
+import { Container } from "@mui/material";
+import {
+	ThemeProvider,
+	createTheme,
+	responsiveFontSizes,
+} from "@mui/material/styles";
 //const ColorModeContext = React.createContext({ toggleColorMode: () => {} });
 
-const themeLight = createTheme({
+let themeLight = createTheme({
 	mode: "light",
 
 	palette: {
@@ -32,10 +36,10 @@ const themeLight = createTheme({
 			secondary: "#004d40",
 		},
 		primary: {
-			light: "#417573",
-			main: "#00675b",
-			dark: "#00251a",
-			contrastText: "#fff",
+			light: "#b2dfdb",
+			main: "#417573",
+			dark: "#00675b",
+			contrastText: "#000000",
 		},
 		secondary: {
 			light: "#e5ffff",
@@ -66,7 +70,9 @@ const themeLight = createTheme({
 	},
 });
 
-const themeDark = createTheme({
+themeLight = responsiveFontSizes(themeLight);
+
+let themeDark = createTheme({
 	palette: {
 		mode: "dark",
 
@@ -113,6 +119,8 @@ const themeDark = createTheme({
 	},
 });
 
+themeDark = responsiveFontSizes(themeDark);
+
 const App = React.forwardRef((props, ref) => {
 	const refObj = {
 		resumeRef: useRef(),
@@ -131,7 +139,6 @@ const App = React.forwardRef((props, ref) => {
 	var observer = new IntersectionObserver(
 		function (entries) {
 			if (entries[0].isIntersecting === true) {
-				console.log(entries[0].target.id);
 				if (entries[0].target.id === "introduction") {
 					setTabValue(0);
 				}
@@ -159,9 +166,12 @@ const App = React.forwardRef((props, ref) => {
 		observer.observe(document.querySelector("#resume"));
 		observer.observe(document.querySelector("#portfolio"));
 	});
-
-	const scrollToRef = (ref) =>
-		window.scrollTo(0, ref.current.offsetTop - 120);
+	// if (ref.current != null)
+	//window.scrollTo(0, ref.current.offsetTop - 120);
+	const scrollToRef = (ref) => {
+		if (ref.current != null)
+			window.scrollTo(0, ref.current.offsetTop - 120);
+	};
 	const executeScrollResume = () => scrollToRef(refObj.resumeRef);
 	const executeScrollIntroduction = () => scrollToRef(refObj.introductionRef);
 	const executeScrollAbout = () => scrollToRef(refObj.aboutRef);
@@ -186,12 +196,8 @@ const App = React.forwardRef((props, ref) => {
 					executeScrollPortfolio={executeScrollPortfolio}
 				/>
 
-				<Box
+				<Container
 					sx={{
-						maxWidth: 960,
-						margin: "auto",
-						paddingLeft: 2,
-						paddingRight: 2,
 						minHeight: "calc(100vh - 170px)",
 						marginBottom: "-50px",
 					}}
@@ -216,7 +222,7 @@ const App = React.forwardRef((props, ref) => {
 						<Route path="/cabin/*" element={<MokkivuokrausApp />} />
 						<Route path="/tshirt/*" element={<PaitakauppaApp />} />
 					</Routes>
-				</Box>
+				</Container>
 				<div className="push"></div>
 				<Footer className="footer" />
 			</ThemeProvider>

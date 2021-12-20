@@ -12,13 +12,13 @@ const Introduction = React.forwardRef((props, ref) => {
 
 			<Box
 				sx={{
-					marginTop: "400px",
-					display: "flex",
+					marginTop: "20vh",
+					display: { sm: "flex" },
 				}}
 			>
 				<Box
 					sx={{
-						maxWidth: "600px",
+						maxWidth: "550px",
 					}}
 				>
 					<Typography variant="h3" gutterBottom>
@@ -50,7 +50,7 @@ const Introduction = React.forwardRef((props, ref) => {
 
 				<Box
 					sx={{
-						marginLeft: "auto",
+						display: "box",
 						height: "250px",
 						width: "250px",
 						overflow: "hidden",
@@ -60,6 +60,10 @@ const Introduction = React.forwardRef((props, ref) => {
 						borderColor: "primary.main",
 						textAlign: "center",
 						backgroundColor: "primary.main",
+						margin: "auto",
+
+						marginTop: { xs: "30px", sm: "auto" },
+						marginLeft: { sm: "auto" },
 					}}
 				>
 					<span
